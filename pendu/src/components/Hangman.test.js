@@ -40,7 +40,9 @@ it("renders with fake API", async () => {
   }
 
   jest.spyOn(global, "fetch").mockImplementation(fakeFetch);
-
+// °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
+// THIS IS IT !!!!!!!!!!!!!
+// °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
   await act(async () => {
     render(<Hangman />, container);
   }); 
