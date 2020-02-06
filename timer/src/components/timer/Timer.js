@@ -23,7 +23,7 @@ class Timer extends React.Component {
   render() {
     return (
       <div data-testid="timer">
-        Seconds: {this.state.seconds}
+        {this.state.seconds}
       </div>
     );
   }

@@ -22,6 +22,9 @@ class Hangman extends Component {
 
   componentDidMount() {
     fetch(GIST)
+    .then((res) => {
+      return res.json()
+    })
     .then(function(res) {
       console.log(res)
     })
