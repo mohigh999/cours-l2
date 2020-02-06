@@ -8,7 +8,7 @@ jobs:
       - checkout
       - run:
           name: test button
-          command: cd button && yarn install & yarn test && cd ..
+          command: yarn global add jest && cd button && yarn install & yarn test && cd ..
       - run:
           name: test timer
           command: cd timer && yarn install & yarn test && cd ..
